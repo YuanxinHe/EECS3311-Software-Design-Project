@@ -1,0 +1,24 @@
+-- use case 3: invoice(1) after cancel(1)
+add_type("nuts")
+add_type("bolts")
+add_type("hammers")  -- report in alphabetical order
+add_type("nuts")     -- Error 1: product type already in database
+add_product("bolts", 100)
+add_product("bolts", 0)  -- Error 2: quantity added must be positive
+add_product("bolts", -1) -- Error 2: quantity added must be positive
+add_product("junk", 200) -- Error 3: product not in database
+add_product("nuts", 1005)
+add_order(<<["nuts", 29], ["bolts", 31]>>)
+add_order(<<["hammers", 1]>>)  -- Error 4: not enough in stock
+add_order(<<["nuts", 1]>>)     -- Error 4: not enough in stock
+invoice(1)
+invoice(2)           -- Error 6: order id is not in the database
+invoice(1)           -- Error 8: order lready invoiced
+cancel_order(1)
+add_product("hammers", 100)
+add_order(<<["hammers", 2], ["nuts", 10]>>) 
+add_order(<<["hammers", 2], ["nuts", 10], ["bolts", 5]>>)
+invoice(1)
+invoice(0)
+cancel_order(0)
+cancel_order(4)

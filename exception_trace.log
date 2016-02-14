@@ -1,0 +1,503 @@
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ISE_EXCEPTION_MANAGER
+                    last_exception @3      Unhandled exception:
+<00000000027C00B8>                         External event.               Fail
+-------------------------------------------------------------------------------
+ISE_EXCEPTION_MANAGER
+                    last_exception @2      
+<00000000027C00B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ISE_EXCEPTION_MANAGER
+                    type_of_code @34       
+<00000000027C00B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ORDER               equal_order @2                                      
+<00000000027C4168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STUDENT_TEST1       t0 @4                                               
+<00000000027C0748>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           fast_item                                           
+<00000000027C07D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           item @5                                             
+<00000000027C07D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @3                 
+<00000000027C09B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @22                Unexpected harmful signal (Segmentation violation):
+<00000000027C09B8>                         Eiffel run-time panic.        Panic
+-------------------------------------------------------------------------------
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ORDER               get_content            Unhandled exception:         
+<00000000028B4168>                         External event.               Fail
+-------------------------------------------------------------------------------
+ORDER               get_content @2                                      
+<00000000028B4168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ORDER               equal_order @4                                      
+<00000000028B4168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STUDENT_TEST1       t0 @4                                               
+<00000000028B0748>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           fast_item                                           
+<00000000028B07D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           item @5                                             
+<00000000028B07D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @3                 
+<00000000028B09B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @22                Unexpected harmful signal (Segmentation violation):
+<00000000028B09B8>                         Eiffel run-time panic.        Panic
+-------------------------------------------------------------------------------
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ROOT                root's creation        Unexpected harmful signal (Segmentation violation):
+<00000000028405A8>                         Eiffel run-time panic.        Bye
+-------------------------------------------------------------------------------
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ORDER               get_content            Unhandled exception:         
+<00000000028B4168>                         External event.               Fail
+-------------------------------------------------------------------------------
+ORDER               get_content @2                                      
+<00000000028B4168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ORDER               equal_order @3                                      
+<00000000028B4168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STUDENT_TEST1       t0 @4                                               
+<00000000028B0748>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           fast_item                                           
+<00000000028B07D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           item @5                                             
+<00000000028B07D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @3                 
+<00000000028B09B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @22                Unexpected harmful signal (Segmentation violation):
+<00000000028B09B8>                         Eiffel run-time panic.        Panic
+-------------------------------------------------------------------------------
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ORDER               get_content            Segmentation violation:      
+<00000000028A4168>                         Operating system signal.      Fail
+-------------------------------------------------------------------------------
+ORDER               get_content @2                                      
+<00000000028A4168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ORDER               equal_order @2                                      
+<00000000028A4168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STUDENT_TEST1       t0 @4                                               
+<00000000028A0748>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           fast_item                                           
+<00000000028A07D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           item @5                                             
+<00000000028A07D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @3                 
+<00000000028A09B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ORDER               get_content            Unhandled exception:         
+<00000000028A4168>                         External event.               Fail
+-------------------------------------------------------------------------------
+ORDER               get_content @2                                      
+<00000000028A4168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ORDER               equal_order @2                                      
+<00000000028A4168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STUDENT_TEST1       t0 @4                                               
+<00000000028A0748>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           fast_item                                           
+<00000000028A07D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           item @5                                             
+<00000000028A07D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @3                 
+<00000000028A09B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @22                Unexpected harmful signal (Segmentation violation):
+<00000000028A09B8>                         Eiffel run-time panic.        Panic
+-------------------------------------------------------------------------------
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ORDER               equal_order @2         Ctrl-Break:                  
+<0000000002794168>                         Operating system signal.      Fail
+-------------------------------------------------------------------------------
+ORDER               equal_order @3                                      
+<0000000002794168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STUDENT_TEST1       t0 @4                                               
+<0000000002790748>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           fast_item                                           
+<00000000027907D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           item @5                                             
+<00000000027907D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @3                 
+<00000000027909B8>                         Routine failure.              Rescue
+-------------------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ entering level 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @9                 Unexpected harmful signal (Segmentation violation):
+<00000000027909B8>                         Eiffel run-time panic.        Panic
+-------------------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ back to level 0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ROOT                root's creation        Unexpected harmful signal (Segmentation violation):
+<00000000027805A8>                         Eiffel run-time panic.        Bye
+-------------------------------------------------------------------------------
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ORDER               equal_order @3         Ctrl-Break:                  
+<0000000002884168>                         Operating system signal.      Fail
+-------------------------------------------------------------------------------
+ORDER               equal_order @3                                      
+<0000000002884168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STUDENT_TEST1       t0 @4                                               
+<0000000002880748>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           fast_item                                           
+<00000000028807D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           item @5                                             
+<00000000028807D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @3                 
+<00000000028809B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+UTF_CONVERTER       utf_32_string_into_utf_8_0_pointer
+                                           Segmentation violation:
+<0000000003DCE3F0>                         Operating system signal.      Fail
+-------------------------------------------------------------------------------
+UTF_CONVERTER       utf_32_string_into_utf_8_0_pointer @9
+<0000000003DCE3F0>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+OPERATING_SYSTEM_SIGNAL_FAILURE
+                    set_description @4     
+<0000000002884898>  (From EXCEPTION)       Routine failure.              Fail
+-------------------------------------------------------------------------------
+ISE_EXCEPTION_MANAGER
+                    exception_from_data @29
+<00000000028800B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ISE_EXCEPTION_MANAGER
+                    set_exception_data @3  
+<00000000028800B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ORDER               equal_order @4                                      
+<0000000002884168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STUDENT_TEST1       t0 @4                                               
+<0000000002880748>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           fast_item                                           
+<00000000028807D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           item @5                                             
+<00000000028807D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @3                 
+<00000000028809B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ISE_EXCEPTION_MANAGER
+                    is_ignored @3          Unhandled exception:
+<00000000028800B8>                         External event.               Fail
+-------------------------------------------------------------------------------
+ISE_EXCEPTION_MANAGER
+                    is_ignored @3          
+<00000000028800B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ISE_EXCEPTION_MANAGER
+                    is_code_ignored @4     
+<00000000028800B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+UTF_CONVERTER       utf_32_string_into_utf_8_0_pointer @41
+<0000000003DCE3F0>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+OPERATING_SYSTEM_SIGNAL_FAILURE
+                    set_description @4     
+<0000000002884898>  (From EXCEPTION)       Routine failure.              Fail
+-------------------------------------------------------------------------------
+ISE_EXCEPTION_MANAGER
+                    exception_from_data @29
+<00000000028800B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ISE_EXCEPTION_MANAGER
+                    set_exception_data @3  
+<00000000028800B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ORDER               equal_order @4                                      
+<0000000002884168>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STUDENT_TEST1       t0 @4                                               
+<0000000002880748>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           fast_item                                           
+<00000000028807D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+PREDICATE           item @5                                             
+<00000000028807D8>  (From FUNCTION)        Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @3                 
+<00000000028809B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_BOOLEAN_TEST_CASE
+                    run @22                Unexpected harmful signal (Segmentation violation):
+<00000000028809B8>                         Eiffel run-time panic.        Panic
+-------------------------------------------------------------------------------
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: dumping core to generate debugging information...
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+HASH_TABLE          has @22                Unhandled exception:         
+<00000000034672C8>                         External event.               Fail
+-------------------------------------------------------------------------------
+HASH_TABLE          has @10                                             
+<00000000034672C8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STRING_8            make @7                                             
+<0000000002E628D8>  (From READABLE_STRING_8)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+STRING_8            make @7                                             
+<0000000002E62878>  (From READABLE_STRING_8)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+INVOICE_SYSTEM      add_order @8                                        
+<0000000003467258>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+INVOICE_SYSTEM      add_order @11                                       
+<0000000003467258>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STUDENT_TEST1       t_5 @7                                              
+<0000000003462788>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<0000000003464898>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @5                                             
+<0000000003464898>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<0000000003464898>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_VIOLATION_CASE   run @3                                              
+<0000000003464738>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_VIOLATION_CASE   run @22                Unexpected harmful signal (Segmentation violation):
+<0000000003464738>                         Eiffel run-time panic.        Panic
+-------------------------------------------------------------------------------
+
+invoice: dumping core to generate debugging information...
+
+invoice: PANIC CASCADE: Unexpected harmful signal (Segmentation violation) -- Giving up...
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+INVOICES            add_order @19          Ctrl-Break:                  
+<0000000003687288>                         Operating system signal.      Fail
+-------------------------------------------------------------------------------
+INVOICES            add_order @4           Unhandled exception:         
+<0000000003687288>                         External event.               Fail
+-------------------------------------------------------------------------------
+INVOICES            add_order @19          output_correct:              
+<0000000003687288>                         Postcondition violated.       Fail
+-------------------------------------------------------------------------------
+INVOICES            add_order @21                                       
+<0000000003687288>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+INVOICE_SYSTEM      add_order @8                                        
+<0000000003687258>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STUDENT_TEST1       t_5 @7                                              
+<0000000003682788>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<0000000003684898>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @5                                             
+<0000000003684898>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<0000000003684898>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_VIOLATION_CASE   run @3                                              
+<0000000003684738>                         Routine failure.              Rescue
+-------------------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ entering level 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
+ES_VIOLATION_CASE   run @9                 Unexpected harmful signal (Segmentation violation):
+<0000000003684738>                         Eiffel run-time panic.        Panic
+-------------------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ back to level 0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MEMORY              root's creation @4     Ctrl-Break:                  
+<00000000027C05A8>  (From ROOT)            Operating system signal.      Fail
+-------------------------------------------------------------------------------
+MEMORY              root's creation        Unhandled exception:         
+<00000000027C05A8>  (From ROOT)            External event.               Fail
+-------------------------------------------------------------------------------
+MEMORY              root's creation        Unexpected harmful signal (Segmentation violation):
+<00000000027C05A8>  (From ROOT)            Eiffel run-time panic.        Panic
+-------------------------------------------------------------------------------
+
+invoice: PANIC CASCADE: main entry point vanished -- Giving up...
+
+invoice: PANIC: Unexpected harmful signal (Segmentation violation) ...
+
+invoice: system execution failed.
+Following is the set of recorded exceptions.
+NB: The raised panic may have induced completely inconsistent information:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+Invalid_object      root's creation @2     Unexpected harmful signal (Segmentation violation):
+<00000000028205A8>  (From ROOT)            Eiffel run-time panic.        Panic
+-------------------------------------------------------------------------------

@@ -1,0 +1,23 @@
+-- use case 4: many cancels in a row
+add_type("nuts")
+add_type("bolts")
+add_type("hammers")
+add_type("")                              --product type must be non-empty string
+add_type("nuts")                          --product type already in database
+add_product("bolts",100)    
+add_product("bolts",-5)                   --quantity added must be positive
+add_product("balls",100)                  --product not in database
+add_product("nuts",1005)           
+add_product("hammers", 50000)
+add_order(<<>>)                           --carts must be non-empty                   
+add_order(<<["nuts", 0]>>)                --cart must be non-empty
+add_order(<<["balls",2]>>)                --some products in order not valid
+add_order(<<["nuts",10],["nuts",10]>>)    --duplicate products in order not valid
+add_order(<<["nuts",10000]>>)             --not enough in stock
+add_order(<<["nuts",2]>>)
+invoice(63)                               --order id is not valid
+invoice(1)
+invoice(1)                                --order already invoiced
+cancel_order(52)                          --order id is not valid
+cancel_order(1)
+

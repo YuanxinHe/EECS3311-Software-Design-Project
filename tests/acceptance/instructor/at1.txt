@@ -1,0 +1,22 @@
+-- use case 1: invoice order, canclel and new invoice
+add_type("nuts")
+nothing
+add_type("bolts")
+add_type("hammers")  -- report in alphabetical order
+add_type("nuts")     -- already entered
+add_product("bolts", 100)
+add_product("nuts", 200)
+add_order(<<["nuts", 25], ["bolts", 15]>>)
+invoice(1)
+invoice(2)           -- error, no such order id (6)
+invoice(1)           -- already invoiced
+cancel_order(1)
+add_order(<<["bolts", 5], ["nuts", 20]>>)     --order id 1
+add_product("hammers", 12)
+add_order(<<["nuts", 30], ["hammers", 2]>>) --order id 2
+add_order(<<["hammers", 10], ["bolts", 95], ["nuts", 140]>>) --order id 3
+add_product("hammers", 2)
+invoice(3)
+add_order(<<["hammers", 1], ["bolts", 1], ["nuts", 9]>>)
+add_order(<<["hammers", 2], ["nuts", 10]>>) --order id 4
+invoice(4)

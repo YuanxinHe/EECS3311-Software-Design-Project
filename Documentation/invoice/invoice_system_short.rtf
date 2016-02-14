@@ -1,0 +1,93 @@
+{\rtf1\ansi\ansicpg1252\deflang1033{\fonttbl{\f0\fscript\fcharset0 Courier;}}{\colortbl ;\red0\green0\blue0;\red255\green255\blue255;\red128\green0\blue0;\red0\green0\blue255;\red0\green128\blue0;\red0\green0\blue128;}
+{\cf3\f0\fs16 {\tab}{\tab}{\tab}-- Automatic generation produced by ISE Eiffel --
+{\line}
+{{\b\cf6 note}{\line}
+{\tab}{\cf1 description}{\cf1 :} "Summary description for \{MODEL\}."{\line}
+{\tab}{\cf1 author}{\cf1 :} ""{\line}
+{\tab}{\cf1 date}{\cf1 :} "$Date$"{\line}
+{\tab}{\cf1 revision}{\cf1 :} "$Revision$"{\line}
+{\line}
+{\b\cf6 class} {\b\cf6 interface}{\line}
+{\tab}{\cf4 INVOICE_SYSTEM}{\line}
+{\line}
+{\b\cf6 create} {\cf1 \{}{\cf4 INVOICE_SYSTEM_ACCESS}{\cf1 ,} {\cf4 STUDENT_TEST1}{\cf1 \}}{\line}
+{\tab}{\cf5 make}{\line}
+{\line}
+{\b\cf6 feature} {\cf3 --}{\cf3 attributes}{\line}
+{\line}
+{\tab}{\cf5 {\cf5 stock}{\cf1 :} {\cf4 STOCK}}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3  track the quantity of product left in our stock and store the product id}{\line}
+{\line}
+{\tab}{\cf5 {\cf5 invoices}{\cf1 :} {\cf4 INVOICES}}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3  handle all orders and change their status.}{\line}
+{\line}
+{\tab}{\cf5 {\cf5 s}{\cf1 :} {\cf4 STRING_8}}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3 store output string}{\line}
+{\tab}{\line}
+{\b\cf6 feature} {\cf3 --}{\cf3 commands using defensive programming}{\line}
+{\line}
+{\tab}{\cf5 {\cf5 add_order} {\cf1 (}{\cf5 order}{\cf1 :} {\cf4 ARRAY} {\cf1 [}{\cf4 TUPLE} {\cf1 [}{\cf5 type_name}{\cf1 :} {\cf4 STRING_8}{\cf1 ;} {\cf5 amount}{\cf1 :} {\cf4 INTEGER_32}{\cf1 ]}{\cf1 ]}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3 first remove corresponding goods in stock, second add new order into invoices; postconditions here are WEAK, deatailed postconditions hidden in respective classes in order to achieve information hiding. Same as all commands below}{\line}
+{\tab}{\tab}{\b\cf6 require}{\line}
+{\tab}{\tab}{\tab}{\cf1 id_valid}{\cf1 :} {\b\cf6 not} {\cf5 too_many_id}{\cf1  }{\cf1 (}{\cf5 invoices}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf1 nonempty_cart}{\cf1 :} {\b\cf6 not} {\cf5 is_empty_cart}{\cf1  }{\cf1 (}{\cf5 order}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf1 all_quantity_valid}{\cf1 :} {\cf5 all_quantity_valid}{\cf1  }{\cf1 (}{\cf5 order}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf1 all_products_valid}{\cf1 :} {\cf5 all_products_valid}{\cf1  }{\cf1 (}{\cf5 order}{\cf1 ,} {\cf5 stock}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf1 no_duplicate_products}{\cf1 :} {\b\cf6 not} {\cf5 has_duplicate_products}{\cf1  }{\cf1 (}{\cf5 order}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf1 enough_stock}{\cf1 :} {\b\cf6 not} {\cf5 not_enough_stock}{\cf1  }{\cf1 (}{\cf5 order}{\cf1 ,} {\cf5 stock}{\cf1 )}{\line}
+{\tab}{\tab}{\b\cf6 ensure}{\line}
+{\tab}{\tab}{\tab}{\cf1 stock_decrease}{\cf1 :} {\cf5 stock}{\b\cf1 .}{\cf5 get_total_amount} {\cf1 <} {\b\cf6 old} {\cf5 stock}{\b\cf1 .}{\cf5 get_total_amount}{\line}
+{\tab}{\tab}{\tab}{\cf1 invoices_increase}{\cf1 :} {\cf5 invoices}{\b\cf1 .}{\cf5 get_order_amount} {\cf1 =} {\b\cf6 old} {\cf5 invoices}{\b\cf1 .}{\cf5 get_order_amount} {\cf1 +} 1{\line}
+}{\line}
+{\tab}{\cf5 {\cf5 add_product} {\cf1 (}{\cf5 type_name}{\cf1 :} {\cf4 STRING_8}{\cf1 ;} {\cf5 quantity}{\cf1 :} {\cf4 INTEGER_32}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3 invoke corresponding command in STOCK if preconditions are satisfied}{\line}
+{\tab}{\tab}{\b\cf6 require}{\line}
+{\tab}{\tab}{\tab}{\cf1 valid_quantity}{\cf1 :} {\b\cf6 not} {\cf5 is_invalid_quantity}{\cf1  }{\cf1 (}{\cf5 quantity}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf1 existed_type}{\cf1 :} {\cf5 is_existed_id}{\cf1  }{\cf1 (}{\cf5 type_name}{\cf1 ,} {\cf5 stock}{\cf1 )}{\line}
+{\tab}{\tab}{\b\cf6 ensure}{\line}
+{\tab}{\tab}{\tab}{\cf1 stock_increase}{\cf1 :} {\b\cf6 Current}{\b\cf1 .}{\cf5 stock}{\b\cf1 .}{\cf5 get_total_amount} {\cf1 =} {\b\cf6 old} {\b\cf6 Current}{\b\cf1 .}{\cf5 stock}{\b\cf1 .}{\cf5 get_total_amount} {\cf1 +} {\cf5 quantity}{\line}
+}{\line}
+{\tab}{\cf5 {\cf5 add_type} {\cf1 (}{\cf5 type_name}{\cf1 :} {\cf4 STRING_8}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3 invoke corresponding command in STOCK if preconditions are satisfied}{\line}
+{\tab}{\tab}{\b\cf6 require}{\line}
+{\tab}{\tab}{\tab}{\cf1 valid_type_name}{\cf1 :} {\b\cf6 not} {\cf5 is_invalid_type_name}{\cf1  }{\cf1 (}{\cf5 type_name}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf1 not_existed}{\cf1 :} {\b\cf6 not} {\cf5 is_existed_id}{\cf1  }{\cf1 (}{\cf5 type_name}{\cf1 ,} {\cf5 stock}{\cf1 )}{\line}
+{\tab}{\tab}{\b\cf6 ensure}{\line}
+{\tab}{\tab}{\tab}{\cf1 type_increase}{\cf1 :} {\b\cf6 Current}{\b\cf1 .}{\cf5 stock}{\b\cf1 .}{\cf5 get_type_amount} {\cf1 =} {\b\cf6 old} {\b\cf6 Current}{\b\cf1 .}{\cf5 stock}{\b\cf1 .}{\cf5 get_type_amount} {\cf1 +} 1{\line}
+{\tab}{\tab}{\tab}{\cf1 type_exist}{\cf1 :} {\b\cf6 Current}{\b\cf1 .}{\cf5 stock}{\b\cf1 .}{\cf5 is_existed_id}{\cf1  }{\cf1 (}{\cf5 type_name}{\cf1 ,} {\cf5 stock}{\cf1 )}{\line}
+}{\line}
+{\tab}{\cf5 {\cf5 cancel_order} {\cf1 (}{\cf5 id}{\cf1 :} {\cf4 INTEGER_32}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3 first remove order from invoices, second restore corresponding goods in stock}{\line}
+{\tab}{\tab}{\b\cf6 require}{\line}
+{\tab}{\tab}{\tab}{\cf1 valid_order_id}{\cf1 :} {\b\cf6 not} {\cf5 is_invalid_order_id}{\cf1  }{\cf1 (}{\cf5 id}{\cf1 ,} {\cf5 invoices}{\cf1 )}{\line}
+{\tab}{\tab}{\b\cf6 ensure}{\line}
+{\tab}{\tab}{\tab}{\cf1 invoices_decrease}{\cf1 :} {\b\cf6 Current}{\b\cf1 .}{\cf5 invoices}{\b\cf1 .}{\cf5 get_order_amount} {\cf1 =} {\b\cf6 old} {\b\cf6 Current}{\b\cf1 .}{\cf5 invoices}{\b\cf1 .}{\cf5 get_order_amount} {\cf1 -} 1{\line}
+{\tab}{\tab}{\tab}{\cf1 stock_increase}{\cf1 :} {\b\cf6 Current}{\b\cf1 .}{\cf5 stock}{\b\cf1 .}{\cf5 get_total_amount} {\cf1 >} {\b\cf6 old} {\b\cf6 Current}{\b\cf1 .}{\cf5 stock}{\b\cf1 .}{\cf5 get_total_amount}{\line}
+}{\line}
+{\tab}{\cf5 {\cf5 invoice} {\cf1 (}{\cf5 id}{\cf1 :} {\cf4 INTEGER_32}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3 invoke corresponding command in INVOICES if preconditions are satisfied}{\line}
+{\tab}{\tab}{\b\cf6 require}{\line}
+{\tab}{\tab}{\tab}{\cf1 valid_order_id}{\cf1 :} {\b\cf6 not} {\cf5 is_invalid_order_id}{\cf1  }{\cf1 (}{\cf5 id}{\cf1 ,} {\cf5 invoices}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf1 not_invoiced_order}{\cf1 :} {\b\cf6 not} {\cf5 is_invoiced_order}{\cf1  }{\cf1 (}{\cf5 id}{\cf1 ,} {\cf5 invoices}{\cf1 )}{\line}
+{\tab}{\tab}{\b\cf6 ensure}{\line}
+{\tab}{\tab}{\tab}{\cf1 order_invoiced}{\cf1 :} {\b\cf6 Current}{\b\cf1 .}{\cf5 invoices}{\b\cf1 .}{\cf5 get_odr}{\cf1  }{\cf1 (}{\cf5 id}{\cf1 )}{\b\cf1 .}{\cf5 check_status}{\line}
+}{\line}
+{\tab}{\cf5 {\cf5 nothing}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3 no state changes after operation}{\line}
+}{\tab}{\line}
+{\b\cf6 feature} {\cf3 --}{\cf3 output handling}{\line}
+{\line}
+{\tab}{\cf5 {\cf5 update} {\cf1 (}{\cf5 msg}{\cf1 :} {\cf4 STRING_8}{\cf1 )}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3  Perform update to the model state.}{\line}
+}{\line}
+{\tab}{\cf5 {\cf5 out}{\cf1 :} {\cf4 STRING_8}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3  New string containing terse printable representation}{\line}
+{\tab}{\tab}{\tab}{\cf3 --}{\cf3  of current object}{\line}
+}{\tab}{\line}
+{\b\cf6 end} {\cf3 --} {\cf3 class }{\cf4 INVOICE_SYSTEM}}
+{\line}
+{\cf3 {\tab}{\tab}{\tab}-- Generated by ISE Eiffel --}
+{\line}
+{\cf3{\tab}{\tab}{\tab}-- For more details: http://www.eiffel.com --}
+}}
+{\line}

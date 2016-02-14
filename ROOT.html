@@ -1,0 +1,103 @@
+<html>
+<head>
+<base target="main">
+</head>
+<body>
+<p align="center"><b>Test Run:04/12/2015   9:03:53.405 AM</b></p><font color="blue"><H2  align="center">ROOT</H2></font><p align="center">Note: * indicates a violation test case</p>
+<table border=1 align="center">
+<tr><td bgcolor="#00FF00" colspan="3">&nbsp;</td></tr><tr><td align="center" colspan="3">PASSED (20 out of 20)</td></tr>
+<tr><td align="center" bgcolor="#000080"><font color="#FFCC00"><b>Case Type</b></font></td>
+<td align="center" bgcolor="#000080"><font color="#FFCC00"><b>Passed</b></font></td>
+<td align="center" bgcolor="#000080"><font color="#FFCC00"><b>Total</b></font></td></tr>
+<tr><td align="center"><font color="blue"><b>Violation</b></font></td>
+<td align="center">12</td><td align="center">12</td></tr>
+<tr><td align="center"><font color="blue"><b>Boolean</b></font></td>
+<td align="center">8</td><td align="center">8</td></tr>
+<tr><td align="center"><font color="blue"><b>All Cases</b></font></td>
+<td align="center">20</td><td align="center">20</td></tr>
+<tr><td align="center" bgcolor="#000080"><font color="#FFCC00"><b>State</b></font></td>
+<td align="center" bgcolor="#000080"><font color="#FFCC00"><b>Contract Violation</b></font></td>
+<td align="center" bgcolor="#000080"><font color="#FFCC00"><b>Test Name</b></font></td></tr>
+<tr><td bgcolor="#008080" align="center"><font color="#FFCC00"><b>Test1</b></font></td>
+<td bgcolor="#008080" align="center" colspan="2"><font color="#FFCC00">STUDENT_TEST1</font></td></tr><tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>t1: check command add_type as well as whether products type list is sorted alphabetically <br>Input order: nuts,bowl,apple <br>Output order:  apple,bowl,nuts </td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>t2: check command add_type as well as whether stock detail list is sorted alphabetically by product <br>name; ensure zero product would not be shown <br>Input order: nuts->300,apple->100; add type bowl but do not add product <br>Output order: apple->100,nuts->300 </td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>t3: check command add_order as well as whether output of "carts" is sorted alphabetiaclly <br>regardless of input order <br>Input order: <br>1: bowl->4,nuts->5 <br>2: nuts->6,apple->10 <br>Output order: <br>1: bowl->4,nuts->5 <br>               2: apple->10,nuts->6 <br>1: bowl->4,nuts->5 <br>               2: apple->10,nuts->6 </td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>t4: check command cancel_order as well as whether output sequence keeps position vacant after <br>cancelling order <br>If not reserved: 1,2,3,4,5,6,7 <br>If reserved(output): 1,2,3,5,4,6,7 </td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>t5: check command invoice as well as whether the output of order state is shown correctly given the <br>same condition of t4; also check whether invoice function working correctly <br>Input: output order is 2, 4, 3, 1, 5; invoice 3 and 5: <br>Output: 2->pending,4->pending,3->invoiced,1->pending,5->invoiced </td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>t6: test equal_order, method of ORDER when orders are equal <br>o1: <<["bowl", 4], ["nuts", 5]>> <br>o2: <<["bowl", 4], ["nuts", 5]>> </td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>t7: test equal_order, method of ORDER when orders are not equal <br>o1: <<["bowl", 4], ["nuts", 5]>> <br>o2: <<["bowl", 3], ["nuts", 5]>> </td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>t8: test zero products will not be shown in stock detail <br> <br>before order:bowls->100,nuts->100 <br> <br>after order:bowls->60 </td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_1: add type with empty string</td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_2: add the same type twice</td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_3: add negative amount of products into stock</td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_4: add untyped products into stock</td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_6: add an empty order</td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_7: add order with negative amount of items</td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_8: add order with untyped items</td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_9: add an order with duplicate items</td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_10: order exceeds the amount in stock</td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_11: invoice an invalid order</td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_12: repeative invoicing</td>
+</tr>
+<tr><td><font color="green"><b>PASSED</b></font></td>
+<td align="center">NONE</td>
+<td>*t_13: cancel not existed order</td>
+</tr>
+</table></body>
+</html>
